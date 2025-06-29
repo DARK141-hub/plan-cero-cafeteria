@@ -33,7 +33,7 @@
         position: relative;
         z-index: 2;
         max-width: 800px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .header h1 {
@@ -183,6 +183,10 @@
         font-size: 2rem;
         color: white;
     }
+    .service-icon img {
+        width: 40px;
+        height: 40px;
+    }   
 
     /* Galería */
     .gallery-grid {
@@ -307,6 +311,48 @@
         100% { transform: scale(1); }
     }
 
+    @media (max-width: 1200px) {
+        .nav-container {
+            padding: 0 10px;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+        }
+
+        .services-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+    @media (max-width: 992px) {
+        .nav-links {
+            align-items: center;
+            gap: 15px;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .contact-info {
+            padding: 30px;
+        }
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
         .header h1 {
@@ -337,5 +383,63 @@
 
         .section h2 {
             font-size: 2rem;
+        }
+    }
+    @media (max-width: 576px) {
+        .header {
+            padding: 60px 20px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+        }
+
+        .header p {
+            font-size: 1rem;
+        }
+
+        .service-card {
+            padding: 30px 20px;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
+            .service-icon img {
+        width: 20px;
+        height: 20px;
+    }   
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 400px) {
+        .header h1 {
+            font-size: 1.5rem;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+        }
+
+        .service-card {
+            padding: 20px 15px;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+
+        .contact-icon {
+            width: 35px;
+            height: 35px;
+            font-size: 0.9rem;
         }
     }
